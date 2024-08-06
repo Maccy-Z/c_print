@@ -1,6 +1,6 @@
 [project]
 name = "cprint"
-version = "1"
+version = "2"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]

@@ -1,5 +1,13 @@
+from typing import Literal
+
+# Define a type that includes all the valid color options
+Color = Literal[
+    "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white",
+    "bright_black", "bright_red", "bright_green", "bright_yellow", "bright_blue",
+    "bright_magenta", "bright_cyan", "bright_white", "reset"
+]
 # Print a string in color
-def c_print(text, color: str):
+def c_print(text, color: Color):
     color_codes = {
         "black": "\033[30m",
         "red": "\033[31m",
